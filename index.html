@@ -7,11 +7,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script type="text/javascript" src="app.js"></script>
 </head>
-<body>
-  <div ng-controller="storeController as store">
-    <h1>{{store.product.name}}</h1>
-      <h2>${{store.product.price}}</h2>
-      <p>{{store.product.description}}</p>
-  </div>
+<body ng-controller="StoreController as store">
+  <div class="product row">
+     <h3>
+       {{store.product.name}}
+       <em class="pull-right">{{store.product.price}}</em>
+     </h3>
+   </div>
 </body>
 </html>

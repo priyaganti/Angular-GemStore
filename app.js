@@ -1,14 +1,14 @@
 (function(){ //good practice to wrap the javascript inside a closure.
   var app = angular.module('gemStore', []);
 
-  app.controller('storeController', function(){
+  app.controller('StoreController', function(){
     this.product = gem;
   });
 
   var gem = {
-    name: 'Dodecahedron',
-    price: 2.95,
-    description : ''
+    name: 'Ruby',
+    price: 100,
+    description : 'The pink gem stone'
   };
 
 })();
