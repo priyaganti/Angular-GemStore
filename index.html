@@ -8,13 +8,21 @@
   <script type="text/javascript" src="app.js"></script>
 </head>
 <body ng-controller="StoreController as store">
-  <ul class="list-group">
-    <li class="list-group-item" ng-repeat="product in store.products">
-      <h3>
-        {{product.name}}
-        <em class="pull-right">{{product.price | currency}}</em>
-      </h3>
-    </li>
-   </ul>
+  <!--  Product Container  -->
+  <div class="list-group-item" ng-repeat="product in store.products"> <!-- create a div for each product in the store -->
+    <h3>{{product.name}} <em class="pull-right">{{product.price | currency}}</em></h3>
+
+    <!-- Image Gallery  -->
+    <div class="gallery" ng-show="{{product.images.length}}"> <!-- display images only when the product has them -->
+      <div class="img-wrap">
+        <img ng-src="{{product.images[0]}}" />
+      </div>
+      <ul class="img-thumbnails clearfix">
+        <li class="small-image pull-left thumbnail" ng-repeat="image in product.images track by $index"> <!--display all the images in thumbnails -->
+          <img ng-src="{{image}}"/>
+        </li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
