@@ -6,9 +6,32 @@
   });
 
   var gems = [
-    {name: 'Ruby', price: 200, description : 'The Pink gem stone'},
-    {name: 'Sapphire', price: 500, description : 'The Blue gem stone'},
-    {name: 'Emerald', price: 300, description : 'The Green gem stone'}
+    {name: 'Ruby',
+    price: 200,
+    shine: 12,
+    description : 'The Pink gem stone',
+    images: [
+      "images/ruby1.jpg",
+      "images/ruby2.jpg",
+      "images/ruby3.jpg"
+    ],
+  },
+    {name: 'Sapphire',
+    price: 500,
+    shine: 15,
+    description : 'The Blue gem stone',
+    images: [],
+  },
+    {name: 'Emerald',
+    price: 300,
+    shine: 10,
+    description : 'The Green gem stone',
+    images: [
+      "images/emerald1.jpg",
+      "images/emerald2.jpg",
+      "images/emerald3.jpg"
+    ],
+  }
   ];
 
 })();
