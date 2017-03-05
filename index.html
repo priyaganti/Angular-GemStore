@@ -8,11 +8,13 @@
   <script type="text/javascript" src="app.js"></script>
 </head>
 <body ng-controller="StoreController as store">
-  <div class="product row" ng-repeat="product in store.products">
-     <h3>
-       {{product.name}}
-       <em class="pull-right">${{product.price}}</em>
-     </h3>
-   </div>
+  <ul class="list-group">
+    <li class="list-group-item" ng-repeat="product in store.products">
+      <h3>
+        {{product.name}}
+        <em class="pull-right">${{product.price}}</em>
+      </h3>
+    </li>
+   </ul>
 </body>
 </html>
