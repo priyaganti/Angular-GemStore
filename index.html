@@ -8,5 +8,10 @@
   <script type="text/javascript" src="app.js"></script>
 </head>
 <body>
+  <div ng-controller="storeController as store">
+    <h1>{{store.product.name}}</h1>
+      <h2>${{store.product.price}}</h2>
+      <p>{{store.product.description}}</p>
+  </div>
 </body>
 </html>
