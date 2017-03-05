@@ -2,13 +2,13 @@
   var app = angular.module('gemStore', []);
 
   app.controller('StoreController', function(){
-    this.product = gem;
+    this.products = gems;
   });
 
-  var gem = {
-    name: 'Ruby',
-    price: 100,
-    description : 'The pink gem stone'
-  };
+  var gems = [
+    {name: 'Ruby', price: 200, description : 'The Pink gem stone'},
+    {name: 'Sapphire', price: 500, description : 'The Blue gem stone'},
+    {name: 'Emerald', price: 300, description : 'The Green gem stone'}
+  ];
 
 })();
