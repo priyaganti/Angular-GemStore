@@ -58,7 +58,11 @@
     price: 500,
     shine: 15,
     description : 'The Blue gem stone',
-    images: [],
+    images: [
+      "images/sapphire1.jpg",
+      "images/sapphire2.jpg",
+      "images/sapphire3.jpg"
+    ],
     reviews: [{
       stars: 1,
       body: "This gem is WAY too expensive for its rarity value.",

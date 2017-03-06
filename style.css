@@ -1,5 +1,5 @@
 body{
-  max-width: 500px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -28,23 +28,16 @@ li.small-image img{
 }
 
 img{
-  max-width: 230px;
-  max-height: 230px;
+  max-width: 200px;
+  max-height: 200px;
 }
 
 .img-wrap {
-  background: #f8f8f8;
-  height: 200px;
+  border: 5px solid gray;
+  height: 220px;
   margin: 0 auto 20px;
   padding: 10px;
-  width: 200px;
-}
-
-.img-thumbnail {
-  background: none;
-  border: 0;
-  height: auto;
-  max-width: 100%;
+  width: 220px;
 }
 
 .img-thumbnails {
@@ -53,8 +46,7 @@ img{
 }
 
 .img-thumbnails .thumbnail {
-  background: #f8f8f8;
-  border: 0;
+  border: 1px solid gray;
   margin-right: 25px;
   min-height: 50px;
 }
