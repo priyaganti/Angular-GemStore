@@ -17,6 +17,13 @@
     }
   });
 
+  app.controller('GalleryController', function(){
+   this.imgIndex = 0;
+   this.setCurrent = function(imgNum){
+     this.imgIndex = imgNum || 0;
+   };
+ });
+
   var gems = [
     {name: 'Ruby',
     price: 200,
