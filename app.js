@@ -27,6 +27,7 @@
  app.controller('ReviewController',function(){
    this.review = {}; //initialize the review to an empty object
    this.addReview = function(product){ //take in the product and push the current review on the product's reviews array
+     this.review.createdOn = Date.now();
      product.reviews.push(this.review);
      this.review = {}; //to clear the live preview and reset.
    }
