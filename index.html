@@ -25,13 +25,25 @@
     </div>
 
     <!-- Tabs -->
-    <section>
+    <section ng-init="tab = 1"> <!--Initialize the value of tab to 1 -->
       <ul class="nav nav-pills">
-        <li><a href="" ng-click="tab = 1">Description</a></li>
+        <li><a href="" ng-click="tab = 1">Description</a></li> <!--When clicked set the value of tab to given number -->
         <li><a href="" ng-click="tab = 2">Specs</a></li>
         <li><a href="" ng-click="tab = 3">Reviews</a></li>
       </ul>
-      {{tab}}
+      <!-- Panels -->
+      <div class="panel" ng-show="tab === 1"><!-- Show the panel only when it matches the given number -->
+        <h3>Description</h3>
+        <p>{{product.decription}}</p>
+      </div>
+      <div class="panel" ng-show="tab === 2">
+        <h3>Specs</h3>
+        <blockquote>None yet</blockquote>
+      </div>
+      <div class="panel" ng-show="tab === 3">
+        <h3>Reviews</h3>
+        <blockquote>None yet</blockquote>
+      </div>
     </section>
   </div>
 </body>
