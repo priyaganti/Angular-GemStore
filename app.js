@@ -24,8 +24,8 @@
    };
  });
 
-  var gems = [
-    {name: 'Ruby',
+  var gems = [{
+    name: 'Ruby',
     price: 200,
     shine: 12,
     description : 'The Pink gem stone',
@@ -34,14 +34,41 @@
       "images/ruby2.jpg",
       "images/ruby3.jpg"
     ],
-  },
-    {name: 'Sapphire',
+    reviews:[{
+      stars: 5,
+      body: "I love this gem!",
+      author: "joe@thomas.com",
+      createdOn: 1397490980837
+    }, {
+      stars: 1,
+      body: "This gem sucks.",
+      author: "tim@hater.com",
+      createdOn: 1397490980837
+    }]
+  }, {
+    name: 'Sapphire',
     price: 500,
     shine: 15,
     description : 'The Blue gem stone',
     images: [],
-  },
-    {name: 'Emerald',
+    reviews: [{
+      stars: 1,
+      body: "This gem is WAY too expensive for its rarity value.",
+      author: "turtleguyy@zdn.me",
+      createdOn: 1397490980837
+    }, {
+      stars: 1,
+      body: "BBW: High Shine != High Quality.",
+      author: "LouisW407@gmail.com",
+      createdOn: 1397490980837
+    }, {
+      stars: 1,
+      body: "Don't waste your rubles!",
+      author: "nat@flatland.com",
+      createdOn: 1397490980837
+    }]
+  }, {
+    name: 'Emerald',
     price: 300,
     shine: 10,
     description : 'The Green gem stone',
@@ -50,7 +77,16 @@
       "images/emerald2.jpg",
       "images/emerald3.jpg"
     ],
-  }
-  ];
-
+    reviews: [{
+     stars: 3,
+     body: "I think this gem was just OK, could honestly use more shine, IMO.",
+     author: "JimmyDean@sausage.com",
+     createdOn: 1397490980837
+   }, {
+     stars: 4,
+     body: "Any gem with 12 faces is for me!",
+     author: "gemsRock@alyssaNicoll.com",
+     createdOn: 1397490980837
+   }]
+  }];
 })();
