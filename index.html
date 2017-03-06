@@ -62,7 +62,7 @@
       </li>
     </ul>
         <!-- Review Form -->
-        <form name="reviewForm" role="form" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewCtrl.addReview(product)">
+        <form name="reviewForm" role="form" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewForm.$valid && reviewCtrl.addReview(product)" novalidate>
           <!--Live Preview -->
           <blockquote ng-show="reviewCtrl.review.stars">
             <strong>{{reviewCtrl.review.stars}} Stars</strong>
@@ -72,7 +72,7 @@
           <!-- Actual  Form -->
           <h4>Submit a Review</h4>
           <fieldset class="from-group">
-          <select class="form-control" ng-model="reviewCtrl.review.stars" ng-options="stars for stars in [5,4,3,2,1]" title="Stars" >
+          <select class="form-control" ng-model="reviewCtrl.review.stars" ng-options="stars for stars in [5,4,3,2,1]" title="Stars" required>
             <option value="">Rate the Product</option>
           </select>
         </fieldset>
@@ -80,7 +80,7 @@
           <textarea class="form-control" ng-model="reviewCtrl.review.body" placeholder="Write a short review of the product" title="Review"></textarea>
         </fieldset>
         <fieldset class="from-group">
-          <input type="email" class="form-control" ng-model="reviewCtrl.review.author" placeholder="johnDoe@example.com" title="Email"/>
+          <input type="email" class="form-control" ng-model="reviewCtrl.review.author" placeholder="johnDoe@example.com" title="Email" required/>
         </fieldset>
         <fieldset class="from-group">
           <input class="btn btn-primary pull-right" type="submit" value="Submit Review"/>
